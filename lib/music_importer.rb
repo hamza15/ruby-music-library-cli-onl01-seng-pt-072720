@@ -9,7 +9,9 @@ class MusicImporter
   end
   
   def files
-    
+    @@all.collect do |song|
+      song.name
+    end
   end
   
 end
