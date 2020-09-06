@@ -58,12 +58,14 @@ class MusicLibraryController
   end
   
   def list_songs_by_artist
+    counter = 1
     puts "Please enter the name of an artist:"
     user_input = gets.chomp
     new_list = Artist.all.select do |artist|
         artist.song.name
       end
-    Artist.all.select {|artist| }
+    new_list.each do |song|
+      puts "#{counter}. #{song.name}"
   end
   
   def list_songs_by_genre
