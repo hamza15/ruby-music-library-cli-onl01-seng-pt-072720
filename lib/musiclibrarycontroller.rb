@@ -24,7 +24,8 @@ class MusicLibraryController
   end 
   
   def list_songs
-    
+    counter = 1
+    Song.
   end
   
   def list_artists
