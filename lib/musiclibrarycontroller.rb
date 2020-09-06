@@ -25,7 +25,7 @@ class MusicLibraryController
   
   def list_songs
     counter = 1
-    Song.
+    Song.all.sort
   end
   
   def list_artists
