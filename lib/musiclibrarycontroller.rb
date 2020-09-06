@@ -66,6 +66,7 @@ class MusicLibraryController
       end
     new_list.each do |song|
       puts "#{counter}. #{song.name}"
+    end
   end
   
   def list_songs_by_genre
