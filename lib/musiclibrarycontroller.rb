@@ -23,5 +23,9 @@ class MusicLibraryController
     user3 = gets.chomp
   end 
   
+  def list_songs
+    
+  end
+  
   
 end
