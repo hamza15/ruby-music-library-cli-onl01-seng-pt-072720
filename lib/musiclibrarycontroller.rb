@@ -29,7 +29,7 @@ class MusicLibraryController
         song.name
       end
     new_list.each do |song_name|
-      puts "#{counter}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      puts "#{counter}. #{song_name.artist.name} - #{song_name.name} - #{song_name.genre.name}"
       counter += 1
     end
       
