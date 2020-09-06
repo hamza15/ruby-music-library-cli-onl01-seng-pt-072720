@@ -18,9 +18,24 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     user = gets.chomp
-    user1 = gets.chomp
-    user2 = gets.chomp
-    user3 = gets.chomp
+    case user_input
+    when "list songs"
+      self.list_songs
+    when "list artists"
+      self.list_artists
+    when "list genres"
+      self.list_genres
+    when "list artist"
+      self.list_songs_by_artist
+    when "list genre"
+      self.list_songs_by_genre
+    when "play song"
+      self.play_song
+    when "exit"
+      'exit'
+    else
+      call
+    end
   end 
   
   def list_songs
