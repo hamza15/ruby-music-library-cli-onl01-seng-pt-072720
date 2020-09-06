@@ -5,6 +5,7 @@ class MusicImporter
   
   def initialize(path)
     @path = path
+    @@all << self
   end
   
   def files
