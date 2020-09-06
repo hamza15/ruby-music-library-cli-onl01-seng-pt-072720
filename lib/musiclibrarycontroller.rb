@@ -1,1 +1,8 @@
-class 
+class MusicLibraryController
+  
+  
+  
+  
+  
+  
+end
