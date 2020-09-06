@@ -37,17 +37,24 @@ class MusicLibraryController
   
   def list_artists
     counter = 1
-    new_list = Artist.all.sort_by do |song|
-        song.name
+    new_list = Artist.all.sort_by do |artist|
+        artist.name
       end
-    new_list.each do |song_name|
-      puts "#{counter}. #{song_name.name}"
+    new_list.each do |artist_name|
+      puts "#{counter}. #{artist_name.name}"
       counter += 1
     end
   end
   
   def list_genres
-    
+    counter = 1
+    new_list = Genre.all.sort_by do |genre|
+        genre.name
+      end
+    new_list.each do |genre_name|
+      puts "#{counter}. #{genre_name.name}"
+      counter += 1
+    end
   end
   
   def list_songs_by_artist
