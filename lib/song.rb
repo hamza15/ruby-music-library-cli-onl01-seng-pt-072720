@@ -58,6 +58,6 @@ class Song
   end
   
   def self.create_from_filename(name)
-    
+    @@all << create_by_name
   end
 end
