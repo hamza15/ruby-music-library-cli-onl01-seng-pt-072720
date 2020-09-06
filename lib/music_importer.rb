@@ -1,6 +1,6 @@
 class MusicImporter
   
-  attr_accessor :path, :song
+  attr_accessor :path
   @@all = []
   
   def initialize(path)
