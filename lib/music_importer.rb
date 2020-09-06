@@ -15,7 +15,7 @@ class MusicImporter
   end
   
   def self.import
-    self.all.each do |song|
-      Song.new
+    files.each do |song|
+      Song.new()
   end
 end
