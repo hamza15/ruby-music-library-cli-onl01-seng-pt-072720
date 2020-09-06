@@ -21,7 +21,6 @@ class MusicLibraryController
     user1 = gets.chomp
     user2 = gets.chomp
     user3 = gets.chomp
-    
   end 
   
   
