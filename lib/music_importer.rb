@@ -9,8 +9,7 @@ class MusicImporter
   end
   
   def files
-    @@all.collect do |song|
-      song.name
+    Dir.entries(@path).select{|file| file.include?(".mp3")}
     end
   end
   
