@@ -83,6 +83,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list_songs
     user_input = gets.chomp
+    
     puts "Playing "
     
   end
