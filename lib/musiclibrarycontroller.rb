@@ -25,7 +25,9 @@ class MusicLibraryController
   
   def list_songs
     counter = 1
-    Song.all.sort
+    names = Song.all.sort_by do |song|
+      puts "#{counter}. #{song.name}"
+      
   end
   
   def list_artists
