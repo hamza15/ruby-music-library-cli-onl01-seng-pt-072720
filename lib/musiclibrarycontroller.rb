@@ -60,7 +60,10 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     user_input = gets.chomp
-    
+    new_list = Artist.all.select do |artist|
+        artist.song.name
+      end
+    Artist.all.select {|artist| }
   end
   
   def list_songs_by_genre
